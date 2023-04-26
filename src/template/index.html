@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="RMC - professional interior design " />
+		<meta name="author" content="Alexander Shulginov" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./icons/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./icons/favicon/site.webmanifest" />
+		<link rel="mask-icon" href="./icons/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#224679" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>RMC</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+
+	<body>
+		@@include("./components/header/header.html")
+	    @@include("./components/hero/hero.html")
+		<main class="main">
+			@@include("./components/about/about.html")
+			@@include("./components/services/services.html")
+			@@include("./components/projects/projects.html")
+			@@include("./components/promo/promo.html")
+			@@include("./components/price/price.html")
+			@@include("./components/team/team.html")
+			@@include("./components/gallery/gallery.html")
+		</main>
+		@@include("./components/footer/footer.html")
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>

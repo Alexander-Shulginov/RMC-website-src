@@ -1,0 +1,61 @@
+//* h1 style
+.title-hero-style {
+	font-family: $font-family-secondary;
+	font-size: clamp-px(42, 68, 325, 1100);
+	color: $color-bright;
+	font-weight: $fw-default;
+	text-transform: uppercase;
+	line-height: clamp-px(45, 74, 325);
+}
+
+//* h2 style
+.title-style {
+	font-family: $font-family-secondary;
+	font-size: clamp-px(34, 60);
+	color: $color-bright;
+	font-weight: $fw-default;
+}
+
+//* h3 style
+.title-section-style {
+	font-family: $font-family-secondary;
+	font-size: $size-subtitle;
+	color: $color-bright;
+	font-weight: $fw-default;
+}
+
+//* span subtitle
+.decor-text-style {
+	padding-top: 10px;
+	font-family: $font-family-secondary;
+	font-size: clamp-px(14, 16);
+	color: $color-highlight;
+	font-weight: $fw-default;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+//* p style
+.descr-style {
+	font-family: $font-family-base;
+	font-size: clamp-px(16, 20);
+	line-height: clamp-px(23, 33);
+	color: $color-gray;
+	font-weight: $fw-default;
+}
+
+//* p style
+.text-style {
+	font-family: $font-family-base;
+	font-size: 16px;
+	line-height: 26px;
+	color: $color-gray;
+}
+
+//* span logo
+.logo-style {
+	font-family: $font-family-secondary;
+	font-size: $size-logo;
+	color: $color-bright;
+	text-transform: uppercase;
+}

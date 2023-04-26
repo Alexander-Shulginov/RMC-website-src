@@ -1,0 +1,64 @@
+//* logo header
+.logo-link-style {
+	display: inline-block;
+	font-family: $font-family-secondary;
+	color: $color-bright;
+	font-size: 45px;
+	font-size: clamp-px(40, 50);
+	text-transform: uppercase;
+	transition: transform 0.3s ease-in-out;
+
+	&:focus-visible {
+		outline-width: 2px;
+		outline-style: solid;
+		outline-color: $color-decor;
+		outline-offset: 6px;
+	}
+
+	&:hover {
+		transform: scale(1.04);
+	}
+}
+
+//* a link nav
+.link-style {
+	font-family: $font-family-base;
+	font-size: $size-text;
+	color: $color-gray;
+	font-weight: $fw-medium;
+	text-transform: uppercase;
+	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -9px;
+		width: 0;
+		height: 2px;
+		background-color: $color-bright;
+		transition: width 0.3s ease-in-out;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: $color-bright;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+	}
+
+	&:focus-visible {
+		outline-width: 2px;
+		outline-style: solid;
+		outline-color: $color-decor;
+		outline-offset: 6px;
+	}
+
+	&:active {
+		color: darken($color-bright, 50%);
+	}
+}

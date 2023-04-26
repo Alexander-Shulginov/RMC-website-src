@@ -1,0 +1,13 @@
+@import "./variables/**/*.scss";
+@import "./mixins/**/*.scss";
+@import "./fonts/**/*.scss";
+@import "./placeholders/**/*.scss";
+
+@import "./config-styles/reset"; //*1
+@import "./config-styles/normalize"; //*2
+
+@import "../template/common-styles/**/*.scss"; //*3
+@import "../template/components/**/*.scss"
+
+// @import "./swiper/swiper";
+

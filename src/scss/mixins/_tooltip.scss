@@ -1,0 +1,25 @@
+@mixin tooltip($background, $color, $width, $content) {
+	position: relative;
+	&:hover:after {
+		background: $background;
+		border: 1px solid $color;
+		border-radius: 5px;
+		bottom: 125%;
+		color: $color;
+		content: $content;
+		left: 50%;
+		padding: 5px 10px;
+		position: absolute;
+		z-index: 98;
+		width: $width;
+		&:before {
+			border: solid;
+			border-color: $background transparent;
+			border-width: 6px 6px 0 6px;
+			bottom: 130%;
+			content: "";
+			left: 50%;
+			position: absolute;
+		}
+	}
+}

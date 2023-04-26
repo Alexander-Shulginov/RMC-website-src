@@ -1,0 +1,64 @@
+.projects {
+	margin-bottom: clamp-px(80, 210);
+
+	&__notes {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+
+	&__content {
+		margin-bottom: clamp-px(20, 36, 912);
+	}
+}
+
+.tabs {
+	&__nav {
+		display: flex;
+		align-items: center;
+		gap: clamp-px(13, 23);
+	}
+
+	&__btn {
+		cursor: pointer;
+	}
+
+	&__content {
+		display: none;
+		visibility: hidden;
+
+		&--active {
+			visibility: visible;
+			opacity: 1;
+
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			justify-content: center;
+			gap: clamp-px(10, 20);
+		}
+	}
+
+	&__item {
+		&:nth-child(even) {
+			transform: translateY(50px);
+		}
+	}
+
+	&__img {
+		max-width: 100%;
+		height: auto;
+		border: 2px solid $color-bright;
+	}
+
+	&__btn-show-more {
+		display: none;
+		margin: 16px auto 0;
+		padding: clamp-px(15, 25) clamp-px(25, 35);
+	}
+}

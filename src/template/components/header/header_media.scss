@@ -1,0 +1,57 @@
+@media (max-width: 788px) {
+	.header {
+		&__logo-link {
+			z-index: 10;
+		}
+
+		&__btn {
+			display: none;
+		}
+
+		&__burger {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__list {
+			flex-direction: column;
+			justify-content: center;
+			gap: 0;
+			position: absolute;
+			top: 0;
+			left: -100%;
+
+			width: 100vw;
+			height: 100vh;
+
+			background-color: $color-bg;
+			font-size: clamp-px(22, 26, 320, 768);
+
+			visibility: hidden;
+			transition: left 0.3s, visibility 0.3s;
+		}
+
+		&__list--active {
+			visibility: visible;
+			left: 0;
+		}
+
+		&__item {
+			padding: clamp-px(20, 26) 0;
+
+			&:last-child {
+				display: block;
+			}
+		}
+
+		&__contacts {
+			display: none;
+		}
+	}
+}
+
+@media (orientation: landscape) {
+	.header__item {
+		padding: 15px;
+	}
+}

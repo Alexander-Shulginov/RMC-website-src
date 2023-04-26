@@ -1,0 +1,88 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 15px;
+		position: relative;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 35px;
+	}
+
+	&__item:last-child {
+		display: none;
+	}
+
+	&__btn {
+		margin-right: 15px;
+		padding: 15px 30px;
+	}
+
+	&__burger {
+		display: none;
+	}
+
+	&__contacts {
+		width: 280px;
+		padding: 16px;
+		background-color: $color-bg;
+		border-radius: 6px;
+		opacity: 0;
+		visibility: hidden;
+
+		position: absolute;
+		top: 100%;
+		right: 14px;
+
+		transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	}
+
+	&__contacts--active {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__phone {
+		margin-bottom: 8px;
+	}
+
+	&__decor-text {
+		display: block;
+		font-size: 42px;
+	}
+
+	&__close {
+		position: absolute;
+		top: 26px;
+		right: 16px;
+		background-color: transparent;
+		cursor: pointer;
+
+		&:focus-visible {
+			outline-width: 2px;
+			outline-style: solid;
+			outline-color: $color-decor;
+			outline-offset: 6px;
+		}
+	}
+
+	&__close-icon {
+		fill: $color-bright;
+		transition: fill 0.3s ease-in-out;
+		@media (any-hover: hover) {
+			&:hover {
+				fill: darken($color-bright, 25%);
+			}
+		}
+	}
+}
