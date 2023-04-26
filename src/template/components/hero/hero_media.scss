@@ -1,12 +1,11 @@
 @media (max-width: 1224px) {
 	.hero {
 		&__inner {
-			display: block;
+			flex-direction: column;
+			justify-content: center;
 		}
 
 		&__content {
-			margin-bottom: clamp-px(50, 120);
-			margin-top: 230px;
 			position: absolute;
 		}
 
@@ -29,17 +28,12 @@
 	}
 }
 
-@media (max-width: 768px) {
-	.hero__content {
-		// margin-top: clamp-px(55, 110);
-	}
-}
-
-@media (max-width: 550px) {
+@media (max-width: 585px) {
 	.hero {
 		&__content {
 			margin: 0;
 			top: 25%;
+			padding-right: 15px;
 		}
 
 		&__descr {
@@ -50,15 +44,12 @@
 
 @media (max-height: 860px) {
 	.hero {
-		&__content {
-		}
-
 		&__decor-text {
 			margin-bottom: 8px;
 		}
 
 		&__title {
-			font-size: clamp-px(35, 50);
+			font-size: clamp-px(35, 55);
 			line-height: 1.2;
 			margin-bottom: 12px;
 			max-width: 460px;
@@ -67,5 +58,11 @@
 			font-size: 16px;
 			margin-bottom: 24px;
 		}
+	}
+}
+
+@media (max-height: 450px) and (orientation: landscape) {
+	.hero__image-box {
+		height: auto;
 	}
 }

@@ -1,3 +1,11 @@
+@media (max-width: 1220px) {
+	.promo__inner {
+		&::after {
+			content: none;
+		}
+	}
+}
+
 @media (max-width: 856px) {
 	.promo {
 		height: auto;
@@ -6,9 +14,6 @@
 			flex-direction: column-reverse;
 			position: relative;
 			gap: 10px;
-			&::after {
-				content: none;
-			}
 		}
 
 		&__box {
