@@ -11,6 +11,5 @@ const modal = () => {
 	btnClose.addEventListener("click", () => {
 		modal.classList.remove(cssActiveModal);
 	});
-
 };
 export default modal;

@@ -5,7 +5,10 @@
 				<span class="price__notes decor-text-style">Our project</span>
 				<h2 class="price__title title-style">Check Availability</h2>
 			</div>
-			<p class="price__descr text-style">The unique architect with ideas from outside the world. Where design and science meet. With people’s comfort in mind</p>
+			<p class="price__descr text-style">
+				The unique architect with ideas from outside the world. Where design and
+				science meet. With people’s comfort in mind
+			</p>
 		</div>
 		<div class="price__body">
 			<table class="price__table">
@@ -78,7 +81,25 @@
 					</tr>
 				</tbody>
 			</table>
-			<img class="price__img" src="./img/price/interior.webp" width="410" height="500" alt="Interior" />
+			<picture>
+				<source
+					type="image/webp"
+					srcset="
+						./img/price/interior.webp,
+						./img/price/interior@2x.webp 2x,
+						./img/price/interior@3x.webp 3x
+					"
+					media="(min-width: 1024px)"
+				/>
+				<img
+					class="price__img"
+					src="./img/price/interior.webp"
+					loading="lazy"
+					width="410"
+					height="500"
+					alt="Interior"
+				/>
+			</picture>
 		</div>
 	</div>
 </section>

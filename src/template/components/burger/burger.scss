@@ -1,5 +1,7 @@
 .burger {
 	margin-right: 15px;
+	font-size: 0;
+
 	&__btn {
 		cursor: pointer;
 		background-color: transparent;
@@ -36,5 +38,4 @@
 			transform: rotate(-45deg);
 		}
 	}
-
 }

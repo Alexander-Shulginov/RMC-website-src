@@ -2,7 +2,25 @@
 	<div class="container">
 		<span class="team__notes decor-text-style">Our team</span>
 		<h2 class="team__title title-style">Meet With Our Team</h2>
-		<img class="team__photo" src="./img/team/team-photo.webp" width="1290" height="649" alt="Team photo" />
+		<picture>
+			<source
+				type="image/webp"
+				srcset="
+					./img/team/team-photo.webp,
+					./img/team/team-photo@2x.webp 2x,
+					./img/team/team-photo@3x.webp 3x
+				"
+				media="(min-width: 568px)"
+			/>
+			<img
+				class="team__photo"
+				src="./img/team/team-photo@0.5x.webp"
+				loading="lazy"
+				width="1290"
+				height="649"
+				alt="Team photo"
+			/>
+		</picture>
 		<dl class="team__people">
 			<div class="team__item">
 				<dt class="team__name">Cody Fisher</dt>
