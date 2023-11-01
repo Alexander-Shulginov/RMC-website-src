@@ -1,0 +1,26 @@
+@media (max-width: 725px) {
+	.footer {
+		&__inner {
+			flex-direction: column;
+			gap: 20px;
+			align-items: flex-start;
+		}
+
+		&__left-block {
+			margin-bottom: 25px;
+		}
+
+		&__right-block {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: space-between;
+
+			width: 100%;
+		}
+
+		&__contact {
+			order: 2;
+		}
+	}
+}

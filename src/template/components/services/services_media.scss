@@ -1,0 +1,41 @@
+@media (max-width: 1320px) {
+	.services {
+		&__inner {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		&__item {
+			&:first-child,
+			&:last-child {
+				transform: translateY(0);
+			}
+
+			&:nth-child(odd) {
+				margin-left: auto;
+			}
+
+			&:nth-child(even) {
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.services {
+		&__inner {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+
+		&__item {
+			&:nth-child(odd) {
+				margin-left: unset;
+			}
+
+			&:nth-child(even) {
+				margin-right: unset;
+			}
+		}
+	}
+}

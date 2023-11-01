@@ -1,0 +1,79 @@
+.promo {
+	margin-bottom: clamp-px(80, 210);
+
+	height: 600px;
+	padding-top: 24px;
+	padding-bottom: 60px;
+	overflow: hidden;
+
+	&__inner {
+		display: flex;
+		gap: clamp-px(65, 144, 1024);
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: -31px;
+			left: 80%;
+			width: 100%;
+			height: 137%;
+			background-image: url(../img/decor-R.webp);
+			background-repeat: no-repeat;
+			background-size: 573px 623px;
+		}
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+	}
+
+	&__icon {
+		max-width: 100%;
+		height: auto;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	&__title {
+		line-height: clamp-px(42, 83);
+		margin-bottom: 20px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: flex-start;
+		gap: clamp-px(30, 60);
+		margin-bottom: clamp-px(20, 45);
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+
+	&__key {
+		font-size: clamp-px(13, 18);
+	}
+
+	&__value {
+		font-family: $font-family-secondary;
+		color: $color-decor;
+		font-size: clamp-px(32, 64);
+	}
+
+	&__value-percent {
+		font-size: clamp-px(20, 32);
+	}
+
+	&__link {
+		align-self: flex-start;
+		padding: clamp-px(10, 20) clamp-px(25, 35); 
+		text-transform: capitalize;
+	}
+}

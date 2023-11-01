@@ -1,0 +1,14 @@
+.gallery {
+	margin-bottom: clamp-px(80, 210);
+
+    &__inner {
+        display: flex;
+
+    }
+
+    &__img {
+        border: 1px solid $color-bright;
+        max-width: 100%;
+        height: auto;
+    }
+}

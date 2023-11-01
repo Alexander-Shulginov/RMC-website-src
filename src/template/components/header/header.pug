@@ -1,0 +1,27 @@
+header.header
+	.hero__container.header__inner
+		a.header__logo-link.logo-link-style(href="index.html") Rmc
+		nav.header__nav
+			ul.header__list
+				li.header__item
+					a.header__link.link-style(href="#about") The studio
+				li.header__item
+					a.header__link.link-style(href="#services") Services
+				li.header__item
+					a.header__link.link-style(href="#projects") Projects
+				li.header__item
+					a.header__link.link-style(href="#team") Team
+				li.header__item
+					a.header__link.link-style(href="#footer") Contacts
+		button.header__btn.btn-style Contact
+		.header__contacts
+			.header__phone
+				span.header__decor-text.title-style Call
+				a.header__phone-link.link-style(href="tel:+01761531774") 017-6153-1774
+			.header__contact-info
+				span.header__decor-text.title-style Visit
+				address.header__address.text-style Logan Barker, 865 Oak Boulevard, Elk Grove, Vermont 95184
+			button.header__close(type="button")
+				svg.header__close-icon(width="20", height="20")
+					use(xlink:href="./icons/sprite.svg#close")
+		include ../burger/burger

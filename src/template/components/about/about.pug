@@ -1,0 +1,31 @@
+section.about#about
+	.container.grid-container
+		.about__content
+			h2.about__title.title-style About Us
+			p.about__descr.text-style
+				| As development continues, engineers may visit building destinations to
+				| guarantee that temporary workers pursue the plan, keep to the timetable,
+				| utilize the predefined materials, and meet work-quality models.
+		.about__info
+			.about__info-content
+				span.about__value 85
+				span.about__value-percent %
+				.about__notes
+					span.about__text Satisfied
+					span.about__text Clients
+			.about__info-visual
+				picture.about__img-top
+					source(type="image/webp", srcset="./img/about/design-work-3.webp, ./img/about/design-work-3@2x.webp 2x, ./img/about/design-work-3@3x.webp 3x", media="(min-width: 1024px)")
+					img.about__img.about__img--third(src="./img/about/design-work-3.webp", loading="lazy", width="408", height="175", alt="Design example")
+				a.about__link.logo-link-style(href="#promo")
+					| Lets Work Together
+					svg.about__icon(width="140", height="140")
+						use(xlink:href="./icons/sprite.svg#text-circle")
+		.about__images
+			picture.about__img-bottom
+				source(type="image/webp", srcset="./img/about/design-work-2.webp, ./img/about/design-work-2@2x.webp 2x, ./img/about/design-work-2@3x.webp 3x", media="(min-width: 1024px)")
+				img.about__img.about__img--second(src="./img/about/design-work-2.webp", loading="lazy", width="300", height="500", alt="Design example")
+
+			picture.about__img-top
+				source(type="image/webp", srcset=" ./img/about/design-work-1.webp, ./img/about/design-work-1@2x.webp 2x, ./img/about/design-work-1@3x.webp 3x ", media="(min-width: 1024px)")
+				img.about__img.about__img--primary(src="./img/about/design-work-1.webp", loading="lazy", width="300", height="500", alt="Design example")

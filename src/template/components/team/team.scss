@@ -1,0 +1,45 @@
+.team {
+	margin-bottom: clamp-px(80, 210);
+
+	&__title {
+		margin-bottom: clamp-px(25, 60);
+	}
+
+	&__photo {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: clamp-px(25, 42);
+	}
+
+	&__people {
+		font-family: $font-family-base;
+		color: $color-bright;
+		font-weight: 500;
+		font-size: clamp-px(13, 24);
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		gap: 29px;
+	}
+
+	&__item {
+		display: flex;
+		padding-bottom: 10px;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $color-gray;
+		}
+	}
+
+	&__name {
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 2px;
+			margin: 0 10px;
+			vertical-align: middle;
+			background-color: $color-bright;
+		}
+	}
+}

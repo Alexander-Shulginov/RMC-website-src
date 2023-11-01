@@ -1,0 +1,27 @@
+section.team#team
+	.container
+		span.team__notes.decor-text-style Our team
+		h2.team__title.title-style Meet With Our Team
+		picture
+			source(type="image/webp" srcset="\
+			./img/team/team-photo.webp,\
+			./img/team/team-photo@2x.webp 2x,\
+			./img/team/team-photo@3x.webp 3x\
+			" media="(min-width: 568px)")
+			img.team__photo(src="./img/team/team-photo@0.5x.webp" loading="lazy" width="1290" height="649" alt="Team photo")
+		dl.team__people
+			.team__item
+				dt.team__name Cody Fisher
+				dd.team__position Ceo
+			.team__item
+				dt.team__name Savannah Nguyen
+				dd.team__position Interior architect
+			.team__item
+				dt.team__name Jerome Bell
+				dd.team__position Interior
+			.team__item
+				dt.team__name Cameron Williamson
+				dd.team__position Architect
+			.team__item
+				dt.team__name Marvin McKinney
+				dd.team__position Construction head
